@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+header{
+    height: 7vh;
+    width: 100vw;
+    box-shadow: 2px 2px 5px 2px rgba(50, 50, 50, 0.5);
+}
+
+p,h1,h2,h3{
+    margin: 0;
+}
+
+p{
+    font-size: 14px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-weight: 500;
+}
+
+.menu{
+    height: inherit;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 0 5%;
+    cursor: pointer;
+    color: #ff565d;
+    font-weight: 400;
+}
+
+.icon-title{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search input{
+    height: 40%;
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #7e7e7e;
+    border-radius: 10px;
+}
+
+.user{
+    height: inherit;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-image{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 5%;
+}
+
+.user-image img{
+    height: inherit;
+    cursor: pointer;
+}
+
+.icon-row{
+    margin: 0 10% 0 2.5%;
+    cursor: pointer;
+}
+
+main{
+    height: 93vh;
+    display: grid;
+    grid-template-columns: 5% 95%;
+}
+
+.navigation{
+    background: rgba(255,86,93,1);
+    background: -moz-linear-gradient(left, rgba(255,86,93,1) 0%, rgba(250,115,104,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,86,93,1)), color-stop(100%, rgba(250,115,104,1)));
+    background: -webkit-linear-gradient(left, rgba(255,86,93,1) 0%, rgba(250,115,104,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,86,93,1) 0%, rgba(250,115,104,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,86,93,1) 0%, rgba(250,115,104,1) 100%);
+    background: linear-gradient(to right, rgba(255,86,93,1) 0%, rgba(250,115,104,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff565d', endColorstr='#fa7368', GradientType=1 );;
+    height: 100%;
+    color: white;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    gap: 10px;
+}
+
+.aside-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.aside-button p{
+    margin-top: 5px;
+}
+
+.icon-aside{
+    font-size: 32px;
+}
+
+.home, .trending, .most-liked, .settings{
+    cursor: pointer;
+}
+
+.settings{
+    grid-row-end: -1;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+.main-content{
+    width: inherit;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20px 1fr 20px 1fr 20px 1fr;
+    gap: 30px;
+}
+
+.subtitle{
+    grid-column-start: auto;
+    grid-column-end: span 3;
+}
+
+.movie{
+    grid-column: auto/span 1;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: url("https://www.thewrap.com/wp-content/uploads/2019/05/2478_TPI_00106R.JPG_cmyk.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie-description{
+    background-color: rgba(250, 116, 104, 0.75);
+    color: white;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
