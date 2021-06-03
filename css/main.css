@@ -151,9 +151,9 @@ main{
     position: relative;
     border-radius: 10px;
     overflow: hidden;
-    background-image: url("https://www.thewrap.com/wp-content/uploads/2019/05/2478_TPI_00106R.JPG_cmyk.jpg");
+    background-image: url(../images/xd2.jpeg);
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
